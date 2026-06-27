@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #009b3a;
+    padding: 15px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 4px solid #fedf00;
+}
+
+.nav-logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #fedf00;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px #002776;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    background-color: #fedf00;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #002776;
+}
+
+h1 {
+    color: #002776;
+    margin-bottom: 20px;
+}
+
+p code {
+    background-color: #333;
+    color: #fedf00;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+.subtitulo {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.btn-principal {
+    display: inline-block;
+    background-color: #002776;
+    color: #ffffff;
+    padding: 16px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 39, 118, 0.3);
+}
+
+.btn-principal:hover {
+    background-color: #001a4d;
+    transform: scale(1.05);
+    color: #fedf00;
+}
+
+.grid-jogadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.cartao-jogador {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #009b3a;
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+    text-align: left;
+}
+
+.cartao-jogador:hover {
+    transform: scale(1.03);
+    border-left-color: #fedf00;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cartao-jogador .numero {
+    background-color: #002776;
+    color: #fedf00;
+    font-size: 1.4rem;
+    font-weight: 800;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.cartao-jogador .info h3 {
+    color: #333;
+    margin-bottom: 3px;
+    font-size: 1.15rem;
+}
+
+.cartao-jogador .info p {
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.cartao-perfil h1 {
+    margin-bottom: 5px;
+    color: #002776;
+}
+
+.role {
+    color: #009b3a;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.info-dev {
+    background-color: #f8faf9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.info-dev p {
+    margin-bottom: 5px;
+    color: #444;
+    font-weight: 500;
+}
+
+.bio {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-rede {
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-rede.github {
+    background-color: #24292e;
+}
+
+.btn-rede.github:hover {
+    background-color: #000000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-rede.email {
+    background-color: #002776;
+}
+
+.btn-rede.email:hover {
+    background-color: #001a4d;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 39, 118, 0.3);
+}
